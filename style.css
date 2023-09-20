@@ -24,7 +24,7 @@ body{
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 10px 10px 10px rgba(202, 183, 130, 0.7)
+  box-shadow: 0 10px 10px 10px rgba(202, 183, 130, 0.75)
 }
 
 .quote-text{
@@ -45,6 +45,41 @@ body{
   font-weight: 400px;
   /* font-style: italic; */
   color: rgb(190, 128, 70);
+}
+
+.button{
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.25rem;
+  color: white;
+  border-radius: 10px;border: none;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.15rem rgb(94, 93, 93)
+}
+
+.button:hover{
+  filter: brightness(120%);
+}
+
+.button:active{
+  transform: translate(0,0.3rem);
+  box-shadow: 0, 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.button-container{
+  margin-top:15;
+  display: flex;
+  justify-content: space-between;
+}
+
+#x:hover{
+  color: #38a1f3;
+}
+
+.fa-twitter{
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 1000px){
