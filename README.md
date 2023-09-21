@@ -7,4 +7,8 @@ To use the Quote Generator, simply clone or download the project and open it in 
 # FEATURES
 1. The Quote Generator has the following features:
 2. Displays random inspirational quotes
-3. Allow users dynamicallly share quotes to X(formarly twitter)
+3. Allow users dynamically share quotes to X(formerly Twitter)
+
+# SCREENSHOTS
+![Uploading Screenshot from 2023-09-21 20-53-07.jpeg…]()
+![Uploading Screenshot from 2023-09-21 20-54-11.jpeg…]()
