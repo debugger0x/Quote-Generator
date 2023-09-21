@@ -5,15 +5,18 @@ const quoteText = document.getElementById('quote');
 // Functions
 function newQuote() {
   const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-  console.log(quote);
-  author.textContent = quote.author;
 
+  // Replacing its text content
+  author.textContent = quote.author;
   if (!quote.text) {
     quoteText.textContent = quote.quote;
   } else {
     quoteText.textContent = quote.text;
   }
-  // Replacing its text content
+
+  if (quote.author == null) {
+    author.textContent = 'Unknown';
+  }
 }
 
 // Event listeners
