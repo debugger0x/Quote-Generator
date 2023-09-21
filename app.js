@@ -2,6 +2,7 @@
 const newQuoteBtn = document.getElementById('new-quote');
 const author = document.getElementById('author');
 const quoteText = document.getElementById('quote');
+const twitterBtn = document.getElementById('x');
 // Functions
 function newQuote() {
   const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
@@ -19,5 +20,13 @@ function newQuote() {
   }
 }
 
+function tweetQuote() {
+  const quoteTweet = quoteText.innerText;
+  const authorTweet = author.innerText;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteTweet} - ${authorTweet}`;
+  window.open(twitterUrl, '_blank');
+}
+
 // Event listeners
 newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
